@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>665 Planalto - Ao Vivo</title>
+<link rel="stylesheet" href="SRC/STYLES/styles.css?v=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#16a34a">
+</head>
+<body>
+<div id="alert"></div>
+<div id="container">
+  <header>
+    <h1><i class="fa-solid fa-bus"></i> 665 Planalto</h1>
+    <div id="status-pill"><span class="dot"></span> <span id="status-text">SIMULAÇÃO</span> • <span id="last-update">--:--:--</span></div>
+  </header>
+
+  <div id="map"></div>
+
+  <div id="info-bar">
+    <div class="stat"><i class="fa-solid fa-route"></i> <span id="paradas-count">38 paradas</span></div>
+    <div class="stat"><i class="fa-solid fa-bus-simple"></i> <span id="bus-count">3 ônibus</span></div>
+    <div class="stat"><i class="fa-solid fa-satellite-dish"></i> <span id="tile-source">openstreetmap.fr/hot</span></div>
+  </div>
+
+  <div id="fleet"></div>
+
+  <div class="actions">
+    <button id="btn-api" class="btn primary"><i class="fa-solid fa-arrows-rotate"></i> API Real</button>
+    <button id="btn-install" class="btn"><i class="fa-solid fa-download"></i> Instalar App</button>
+    <button id="btn-qrcode" class="btn"><i class="fa-solid fa-qrcode"></i> QR Code</button>
+    <a href="https://github.com/marcelomg20/tempoalerta" target="_blank" class="btn ghost"><i class="fa-brands fa-github"></i> Seu GitHub</a>
+  </div>
+
+  <div id="qrcode-box" style="display:none; text-align:center; margin:12px 0;">
+    <img id="qr-img" src="" alt="QR Code" style="border-radius:12px; border:2px solid #fff3">
+    <p style="font-size:12px; opacity:0.7">Aponte a câmera para abrir no celular</p>
+  </div>
+
+  <footer>
+    <p>Mapa gratuito: OpenStreetMap HOT • Dados: EPTC / DataPoa • Hospedagem: GitHub Pages</p>
+    <p>Crie o repo <b>bus665</b> no GitHub, ative Pages em Settings > Pages > Deploy from main branch</p>
+  </footer>
+</div>
+<script src="SRC/JAVASCRIPT/script.js?v=1"></script>
+</body>
+</html>

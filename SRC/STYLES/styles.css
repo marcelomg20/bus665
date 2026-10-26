@@ -1,0 +1,30 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f172a;color:#e2e8f0;font-family:system-ui,-apple-system,Segoe UI,Roboto;min-height:100vh}
+#container{max-width:1100px;margin:0 auto;padding:12px}
+header{display:flex;justify-content:space-between;align-items:center;background:#1e293b;padding:14px 18px;border-radius:14px;margin-bottom:12px}
+header h1{font-size:18px;letter-spacing:0.5px}
+#status-pill{background:#0b1220;padding:6px 10px;border-radius:999px;font-size:12px;display:flex;gap:6px;align-items:center}
+#status-pill .dot{width:8px;height:8px;background:#22c55e;border-radius:50%;display:inline-block;animation:pulse 1.5s infinite}
+@keyframes pulse{0%{opacity:1}50%{opacity:.4}100%{opacity:1}}
+#map{width:100%;height:58vh;min-height:380px;border-radius:16px;border:2px solid #ffffff1a;overflow:hidden;background:#0b1220}
+#info-bar{display:flex;gap:10px;margin:10px 0;flex-wrap:wrap}
+.stat{background:#1e293b;padding:8px 12px;border-radius:999px;font-size:12px}
+#fleet{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin:10px 0}
+.bus-card{background:#1e293b;border-radius:14px;padding:12px;border-left:4px solid #22c55e}
+.bus-card.B2{border-left-color:#f59e0b}
+.bus-card.B3{border-left-color:#38bdf8}
+.bus-card .top{display:flex;justify-content:space-between;align-items:center}
+.bus-card .prog{height:6px;background:#0f172a;border-radius:999px;margin-top:8px;overflow:hidden}
+.bus-card .prog i{display:block;height:100%;background:currentColor;width:50%}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.btn{background:#1e293b;border:1px solid #ffffff1a;color:#e2e8f0;padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:600}
+.btn.primary{background:#22c55e;color:#052e16}
+.btn.ghost{background:transparent}
+footer{margin-top:18px;font-size:11px;opacity:.6;text-align:center;line-height:1.5}
+.leaflet-container{font-family:system-ui}
+.bus-icon{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#052e16;border:2px solid #fff;box-shadow:0 2px 8px #0006}
+.bus-icon.B1{background:#22c55e}
+.bus-icon.B2{background:#f59e0b}
+.bus-icon.B3{background:#38bdf8}
+.parada-num{width:22px;height:22px;background:#0f172a;border:1.5px solid #fff;border-radius:50%;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
